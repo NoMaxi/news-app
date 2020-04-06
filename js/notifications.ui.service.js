@@ -9,12 +9,12 @@ class NotificationsUI {
    */
   static generateNotificationTemplate(message) {
     return `
-            <div class="card card-notification red lighten-4 z-depth-3">
-                <div class="card-content">
-                    <p><i class="material-icons">error_outline</i>${message}</p>
-                </div>
-            </div>
-        `;
+      <div class="card card-notification red lighten-4 z-depth-3">
+        <div class="card-content">
+          <p><i class="material-icons">error_outline</i>${message}</p>
+        </div>
+      </div>
+    `;
   }
 
   /**

@@ -1,2 +1,2 @@
 # news-app
-Simple news application built with JS
+News JS-application based on ***newsapi.org***
