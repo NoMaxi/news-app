@@ -16,7 +16,6 @@ function onSelectChange(event) {
 
     newsService.getTopHeadlinesNews(category, country, (response) => {
         const { totalResults, articles } = response;
-        console.log(articles);
         uiService.clearContainer();
         if (!totalResults) notificationService.addNotification('Статьи не найдены. Измените свой запрос.');
         articles.forEach((article) => uiService.addArticle(article));
@@ -25,12 +24,12 @@ function onSelectChange(event) {
 
 const searchInput = document.getElementById('search');
 
-// Function that handles the events of entering characters into the
-// search input field
+// Function that handles the events of entering characters into the search
+// input field
 function onKeyUpHandler(event) {
     const search = searchInput.value;
 
-    if (search.length <= 3) {
+    if (search.length < 3) {
         console.log('Введите минимум 3 символа для начала живого поиска');
         return;
     }
