@@ -11,3 +11,35 @@
   font-size: 1.9rem;
   margin-right: 1rem;
 }
+
+.card .card-content .card-title a {
+  font-weight: bolder;
+}
+
+.card .card-content .card-title a:hover {
+  color: royalblue;
+}
+
+.card .card-content .card-date {
+  color: gray;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.card .card-action a {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .card-action a span {
+  display: inline-block;
+}
+
+.card .card-action a .card-source-name {
+  color: dodgerblue;
+  text-transform: lowercase;
+}
+
+.card .card-action a:hover .card-source-name {
+  color: darkblue;
+}
