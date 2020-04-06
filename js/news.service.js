@@ -7,7 +7,7 @@ class NewsService {
    * @param {Function} callback
    */
   getTopHeadlinesNews(category = ENV.category, country = ENV.country, callback) {
-    httpClient.get(`${ENV.apiUrl}/top-headlines?country=${country}&category=${category}`, callback);
+    httpClient.get(`${ ENV.apiUrl }/top-headlines?country=${ country }&category=${ category }`, callback);
   }
 
   /**
@@ -15,6 +15,6 @@ class NewsService {
    * @param {Function} callback
    */
   getAllNews(search = ENV.search, callback) {
-    httpClient.get(`${ENV.apiUrl}/everything?q=${search}`, callback);
+    httpClient.get(`${ ENV.apiUrl }/everything?q=${ search }`, callback);
   }
 }

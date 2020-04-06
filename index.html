@@ -14,6 +14,9 @@
 </head>
 
 <body>
+<header>
+  <h1 class="main-title">News Agregator</h1>
+</header>
 <main>
   <div class="form-wrap container">
     <div class="card">
@@ -22,8 +25,19 @@
           <div class="col s12 m6">
             <div class="input-field col s12">
               <select id="country" name="country">
-<!--                <option disabled selected value="">Choose country</option>-->
+                <option disabled selected value="">Choose country</option>
+                <option value="au">Australia</option>
+                <option value="br">Brazil</option>
+                <option value="cn">China</option>
+                <option value="fr">France</option>
+                <option value="de">Germany</option>
+                <option value="it">Italy</option>
+                <option value="jp">Japan</option>
+                <option value="pl">Poland</option>
+                <option value="ru">Russia</option>
+                <option value="tr">Turkey</option>
                 <option value="ua">Ukraine</option>
+                <option value="gb">United Kingdom</option>
                 <option value="us">United States</option>
                 <option value="ve">Venezuela</option>
               </select>
@@ -33,7 +47,11 @@
           <div class="col s12 m6">
             <div class="input-field col s12">
               <select id="category" name="category">
-<!--                <option disabled selected value="">Choose category</option>-->
+                <option disabled selected value="">Choose category</option>
+                <option value="business">Business</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="general">General</option>
+                <option value="health">Health</option>
                 <option value="science">Science</option>
                 <option value="sports">Sports</option>
                 <option value="technology">Technology</option>
@@ -45,7 +63,7 @@
         <div class="row">
           <div class="input-field col s12">
             <input id="search" placeholder="Search news" type="text">
-            <label for="search">Search</label>
+            <label class="search-label" for="search">Search</label>
           </div>
         </div>
       </form>
@@ -59,9 +77,8 @@
 <!-- jQuery -->
 <script
         crossorigin="anonymous"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        src="https://code.jquery.com/jquery-3.3.1.min.js">
-</script>
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
@@ -77,5 +94,6 @@
 <script src="js/news.ui.service.js"></script>
 <script src="js/notifications.ui.service.js"></script>
 <script src="js/news.controller.js"></script>
+
 </body>
 </html>

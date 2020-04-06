@@ -1,3 +1,16 @@
+body {
+  background: #fff url('../assets/news-bg.png') no-repeat fixed center center;
+  background-size: 100%;
+}
+
+.main-title {
+  color: peachpuff;
+  text-shadow: 1px 1px 2px red, 0 0 1em cornsilk, 0 0 0.2em aqua;
+  font-family: -webkit-pictograph, sans-serif;
+  font-size: 60px;
+  text-align: center;
+}
+
 .card-notification p {
   display: flex;
   align-items: center;
@@ -10,6 +23,26 @@
   color: #c200ff;
   font-size: 1.9rem;
   margin-right: 1rem;
+}
+
+.card {
+  background-color: ivory;
+  padding-top: 12px;
+}
+
+.card .select-wrapper input.select-dropdown,
+.card .input-field input#search {
+  font-size: 18px;
+  padding-top: 8px;
+}
+
+.card .input-field label {
+  font-size: 0.9rem;
+  margin-left: 3px;
+}
+
+.card .input-field label.search-label {
+  font-size: 1.2rem;
 }
 
 .card .card-content .card-title a {
