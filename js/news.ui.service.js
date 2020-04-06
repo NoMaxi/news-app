@@ -1,6 +1,6 @@
 class NewsUI {
   constructor() {
-    this.newsContainer = document.querySelector('.news-wrap .row');
+    this._newsContainer = document.querySelector('.news-wrap .row');
   }
 
   /**
@@ -41,14 +41,14 @@ class NewsUI {
    */
   addArticle(article) {
     const template = NewsUI.generateArticleTemplate(article);
-    this.newsContainer.insertAdjacentHTML('afterbegin', template);
+    this._newsContainer.insertAdjacentHTML('afterbegin', template);
   }
 
   clearContainer() {
-    let first = this.newsContainer.firstElementChild;
+    let first = this._newsContainer.firstElementChild;
     while (first) {
-      this.newsContainer.removeChild(first);
-      first = this.newsContainer.firstElementChild;
+      this._newsContainer.removeChild(first);
+      first = this._newsContainer.firstElementChild;
     }
   }
 }
